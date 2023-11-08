@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Matemáticas</title>
+    <link rel="icon" href="mate.ico">
+	<style>
+        * {
+	color: #d0d0d0 ;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: #242424;
+	/*overflow: hidden;*/
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+
+.espaciar {
+	margin-left: 30px;
+}
+
+h2 {
+	font-family: 'Martian Mono', monospace;
+	font-size: 1.5rem;
+	padding: 0em 2em;
+}
+
+h3 {
+	font-family: 'Martian Mono', monospace;
+	font-size: 1.3rem;
+	padding: 0em 4em;
+}
+
+.texto {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	text-align: justify;
+	margin-bottom: 20px;
+	padding: 0em 6em;
+}
+
+li {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	text-align: justify;
+	margin-bottom: 10px;
+	padding: 0em 8em;
+	list-style: none;
+}
+.contacto {
+	background-color: #343434;
+	padding: 8px;
+	border-radius: 10px;
+	font-size: 1.3em;
+}
+
+.contacto:hover {
+	background-color: #666666;
+	transition: background-color .5s;
+
+}
+
+.headerindex{
+	background-color: #151515; 
+	padding: 0px 15px;
+	border-radius: 0px 0px 10px 10px;
+	height: 100px;
+	margin: 0px 0px 0px 0px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.h1{
+	font-family: 'Martian Mono', monospace;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.logoheader {
+	height: 4.5em;
+	width: 4.5em;
+}
+
+.divindice {
+	background-color: #151515;
+	height: 100%;
+	margin: .5%;
+	border-radius: 10px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 40px 10px 0px 10px
+}
+
+.indice1{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+ .listaindice{
+	background-color: #343434;
+	text-decoration: none;
+	line-height: 1;
+	border-radius: 10px;
+	font-size: 2em;
+	height: 5em;
+	width: 10em;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.listaindice:hover {
+	background-color: #666666;
+	transition: background-color .5s;
+
+}
+
+.hrefmaterias {
+	text-decoration: none;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*PARA TODAS LAS PÁGINAS DE MATERIAS*/
+body {
+		margin: 0;
+		padding: 0;
+	}
+
+	.header{
+		background-color: #151515; 
+		padding: 0px 15px;
+		height: 100px;
+		margin: 0px;
+		border-radius: 0px;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav1{
+		background-color: #151515; 
+		padding: 0px 15px;
+		border-radius: 0px;
+		height: 30px;
+		margin: 0px;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.nav1link {
+		font-family: 'Martian Mono', monospace;
+		border-radius: 5px;
+		background-color: #343434;
+		padding: 1px;
+		width: 48%;
+		margin: 0px 0px 15px 0px;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	
+	.nav1link:hover {
+		background-color: #666666;
+	}
+
+	.titulotema {
+		background-color: #343434; 
+		padding: 0px 15px;
+		border-radius: 0px;
+		height: 30px;
+		margin: 0px 0px 0px 0px;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.indicetema {
+		background-color: #343434; 
+		padding: 0px 15px;
+		border-radius: 0px 0px 10px 10px;
+		height: 20px;
+		margin: 0px 0px 0px 0px;
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+	}
+
+	.indicetema-tema{
+		border-radius: 5px;
+		margin: 0px;
+		text-align: center;
+		width: 19.8%;
+		font-size: 1rem;
+	}
+
+	.indicetema-tema:hover{
+		background-color: #656565;
+	}
+
+	.sidebar {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+	}
+		
+	.sidebar a {
+		padding: 8px 8px 8px 32px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #818181;
+		display: block;
+		transition: 0.3s;
+	}
+		
+	.sidebar a:hover {
+		color: #f1f1f1;
+	}
+		
+	.sidebar .closebtn {
+		position: absolute;
+		top: 20px;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+	}
+
+	.openbtn {
+		font-size: 20px;
+		cursor: pointer;
+		background-color: #111;
+		color: white;
+		padding: 10px 15px;
+		border: none;
+		position: fixed;
+		top: 27px;
+		left: 10px;
+		border-radius: 5px;
+		z-index: 1;
+	}
+		
+	.openbtn:hover {
+		background-color: #444;
+	}
+		
+	#main {
+		transition: margin-left .5s;
+		padding: 16px;
+	}
+
+	#header {
+		transition: margin-left .5s;
+		padding: 16px;
+	}
+
+	#nav1 {
+		transition: margin-left .5s;
+		padding: 16px;
+	}
+
+	#titulotema {
+		transition: margin-left .5s;
+		padding: 16px;
+	}
+
+	#indicetema {
+		transition: margin-left .5s;
+		padding: 16px;
+	}
+		
+	/* Media queries para dispositivos pequeños */
+	@media screen and (max-width: 650px) {
+		.sidebar {padding-top: 15px;}
+		.sidebar a {font-size: 18px;}
+		.h1 {font-size: 1.2rem}
+		h2 {font-size: .9rem}
+		.texto {font-size: 14px}
+		.openbtn {font-size: 15px;}
+		.nav1link {font-size: 1rem}
+	}	
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+   * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+table{
+	border: gray 1px solid;
+	border-radius: 5px;
+	width: 60%;
+	margin-bottom: 20px;
+}
+th{
+	border: gray 1px solid;
+	text-align: center;
+	height: 20px;
+	background-color: #42214b;
+	
+}
+td{
+	border: gray 1px solid;
+	text-align: center;
+	background-color: #674f6d;
+
+}
+.tabla2{
+	border: gray 1px solid;
+	border-radius: 5px;
+	width: 80%;
+}
+.nada{
+	border: none;
+	text-align: center;
+	background-color: transparent;
+}
+.dividir{
+	background-color: #2f2f2f;
+	border-radius: 15px;
+	padding: 20px;
+	margin: 40px;
+}
+    </style>
+</head>
+<body>
+    <header class="headerindex">
+		<div class="contacto">Manuel Castillo</div>
+		<h1 class="h1">Página Matemáticas</h1>
+		<img src="mate.png" class="logoheader">
+	</header>
+    <nav id="nav1" class="nav1">
+		<a href="#conj" class="nav1link">Conjuntos y diagramas de Venn</a>
+  		<a href="#tablas" class="nav1link">Tablas de verdad</a>
+	</nav>
+    <h1 class="h1" id="conj">Conjuntos y diagramas de Venn</h1>
+    <p class="texto">Un conjunto es una colección bien definida de objetos llamados elementos o miembros del conjunto (no hay ambiguedad ni subjetividad). Ejemplos de conjuntos:</p>
+	<center><table>
+		<tr>
+			<th>Símbolo</th>
+			<th>Definición</th>
+		</tr>
+		<tr>
+			<td>φ</td>
+			<td>Conjunto vacío, que carece de elementos</td>
+		</tr>
+		<tr>
+			<td>N</td>
+			<td>Conjunto de los números naturales</td>
+		</tr>
+		<tr>
+			<td>Z</td>
+			<td>Conjunto de los números enteros</td>
+		</tr>
+		<tr>
+			<td>Q</td>
+			<td>Conjunto de los números racionales</td>
+		</tr>
+		<tr>
+			<td>R</td>
+			<td>Conjunto de los números reales</td>
+		</tr>
+		<tr>
+			<td>C</td>
+			<td>Conjunto de los números complejos</td>
+		</tr>
+	</table></center>
+	<div class="dividir"><h2>Cardinalidad</h2>
+	<p class="texto">Cuando se habla de conjuntos un término muy importante de aprender es la cardinalidad, la cúal representa el número de elementos que contiene un conjunto. por ejemplo:</p>
+	<ul>
+		<li>A = {4, 6, 8, 9}</li>
+		<li>La cardinalidad del conjunto A es 4 ya que está conformado por cuatro elementos, su cardinalidad de representaría así: n(A)=4.</li><br>
+	</ul>
+	</div>
+	<div class="dividir"><h2>Tipos de conjuntos</h2>
+		<h3>Conjunto finito</h3>
+			<p class="texto">Es aquel conjunto con cardinalidad definida. Tiene un límite de elementos. Ejemplo: </p>
+			<ul>
+				<li>B = {x | x es un día de la semana}</li>
+				<li>B = {lunes, martes, miércoles, jueves, viernes, sábado, domingo}</li>
+				<li>El conjunto tiene 7 elementos, es decir su cardinalidad está definida, por tanto es finito</li>
+			</ul>
+        <br><h3>Conjunto infinito</h3>
+		<p class="texto">Son aquellos conjuntos con cardinalidad no definida, por ser demasiado grandes para cuantificarlos. Ejemplo</p>
+			<ul>
+				<li>C = {x∈N | x es múltiplo de 3}</li>
+				<li>C = {3, 6, 9, 12, 15, 18, 21, 27, 30,…}</li>
+				<li>El conjunto continúa indefinidamente, no se puede determinar su número de elementos, por tanto, su cardinalidad es infinita. Se representa como: n(C)=∞</li>
+			</ul>
+        <br><h3>Conjunto vacío</h3>
+		<p class="texto">Es aquel que carece de elementos y se denota con el símbolo φ o bien {}. Ejemplo:</p>
+		<ul>
+			<li>D = {x∈N | 2x − 1= 0}</li>
+			<li>El único valor de x que satisface la igualdad es 1pero no pertenece al conjunto de los números naturales, por tanto, el conjunto D es vacío. D = {} = φ</li>
+			<li>Su cardinalidad es n(D) = 0</li>
+		</ul>
+        <br><h3>Conjuntos equivalentes</h3>
+		<p class="texto">Sean A y B conjuntos no vacíos, se dice que A es equivalente a B si y sólo si tiene la misma cardinalidad; se denota: A ≅ B y se lee A es equivalente a B. Ejemplo:</p>
+		<ul>
+			<li>A ≅ B y se lee A es equivalente a B.</li>
+			<li>Si A = {x∈N | x &lt 5} y B = {a, e, i, o} comprueba que A es equivalente a B.</li>
+			<li>Las cardinalidades son: n(A) = 4, n(B) = 4, por tanto, se concluye que ambos son equivalentes. A ≅ B.</li>
+		</ul>
+		<br><h3>Conjuntos iguales</h3>
+		<p class="texto">Son aquellos que tienen la misma cardinalidad y los mismos elementos. Ejemplo:</p>
+		<ul>
+			<li>A = {x∈N | x es divisor de 6} y B = {1, 2, 3, 6}</li>
+			<li>A = {1, 2, 3, 6} y B = {1, 2, 3, 6}</li>
+			<li>Sus cardinalidades son: n(A) = n(B) = 4</li>
+			<li>Ambos tienen la misma cardinalidad y los mismos elementos, por tanto, los conjuntos son iguales, es decir, A = B.</li>
+		</ul>
+		<br><h3>Conjuntos disjuntos</h3>
+		<p class="texto">Son aquellos que no tienen elementos comunes. Ejemplo:</p>
+		<ul>
+			<li>R = {x∈N | x es divisor de 5 } y S = {x∈N | 2 < x < 5 }</li>
+			<li>R = {1, 5} y S = {3, 4}</li>
+			<li>Los conjuntos no tienen elementos en común, por tanto, los conjuntos R y S  son disjuntos.</li>
+		</ul>
+		<br><h3>Subconjuntos</h3>
+		<p class="texto">Dado un conjunto S se dice que A es subconjunto de S, si todos los elementos de A están contenidos en el conjunto S y se denota por A ⊆ S. Por ejemplo:</p>
+		<ul>
+			<li>S = {x | x es dígito} y A = {2, 4, 6, 8}</li>
+			<li>S = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}</li>
+			<li>Los elementos de A están contenidos en S, por tanto, A ⊆S</li>
+		</ul>
+		<br><h3>Conjunto potencia</h3>
+		<p class="texto">Se le llama así al conjunto que forman todos los subconjuntos de un conjunto. Ejemplo:</p>
+		<ul>
+			<li>T = {2, 4, 6}</li>
+			<li>El número de subconjuntos de T es: N(s) = 23 = 8</li>
+			<li>El conjunto potencia está formado por 8 subconjuntos de cero, uno, dos y tres elementos, los cuales son: {{ },{2},{4},{6},{2,4},{2,6},{4,6},{2, 4,6}}</li>
+		</ul>
+		<br><h3>Conjunto universal</h3>
+		<p class="texto">Sean A, B, C, …, subconjuntos de un conjunto U, a este último se le llama conjunto universo de los conjuntos dados. Ejemplo:</p>
+		<ul>
+			<li>Sea U = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9} y los conjuntos A, B  y C tales que:</li>
+			<li>A = {2, 4, 6, 8}, B = {1, 2, 3, 4} y C = {1, 2, 6, 7}</li>
+			<li>Como A ⊆ U, B ⊆ U, C ⊆ U, siendo U el conjunto universo.</li>
+		</ul>
+	</div>
+        <div class="dividir"><h2>Simbología</h2>
+		<center><table>
+			<tr>
+				<th>Símbolo</th>
+				<th>Definición</th>
+			</tr>
+			<tr>
+				<td>{}</td>
+				<td>Conjunto</td>
+			</tr>
+			<tr>
+				<td>∈</td>
+				<td>Es un elemento del conjunto o pertenece al conjunto</td>
+			</tr>
+			<tr>
+				<td>∉</td>
+				<td>No es un elemento del conjunto o no pertenece al conjunto</td>
+			</tr>
+			<tr>
+				<td>|</td>
+				<td>Tal que</td>
+			</tr>
+			<tr>
+				<td>n(C)</td>
+				<td>Cardinalidad del conjunto C</td>
+			</tr>
+			<tr>
+				<td>U</td>
+				<td>Conjunto universal</td>
+			</tr>
+			<tr>
+				<td>φ</td>
+				<td>Conjunto vacío</td>
+			</tr>
+			<tr>
+				<td>⊆</td>
+				<td>Subconjunto de</td>
+			</tr>
+			<tr>
+				<td>⊂</td>
+				<td>Subconjunto propio de</td>
+			</tr>
+			<tr>
+				<td>⊄</td>
+				<td>No es subconjunto propio de</td>
+			</tr>
+			<tr>
+				<td>></td>
+				<td>Mayor que</td>
+			</tr>
+			<tr>
+				<td><</td>
+				<td>Menor que</td>
+			</tr>
+			<tr>
+				<td>≥</td>
+				<td>Mayor o igual que</td>
+			</tr>
+			<tr>
+				<td>≤</td>
+				<td>Menor o igual que</td>
+			</tr>
+			<tr>
+				<td>∩</td>
+				<td>Intersección de conjuntos</td>
+			</tr>
+			<tr>
+				<td>∪</td>
+				<td>Unión de conjuntos</td>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>Complemento del conjunto A</td>
+			</tr>
+			<tr>
+				<td>=</td>
+				<td>Símbolo de igualdad</td>
+			</tr>
+			<tr>
+				<td>≠</td>
+				<td>No es igual a</td>
+			</tr>
+			<tr>
+				<td>...</td>
+				<td>El conjunto continúa</td>
+			</tr>
+			<tr>
+				<td>⇒</td>
+				<td>Entonces</td>
+			</tr>
+			<tr>
+				<td>⇔</td>
+				<td>Si y sólo si</td>
+			</tr>
+			<tr>
+				<td>∼</td>
+				<td>No (es falso que)</td>
+			</tr>
+			<tr>
+				<td>∧</td>
+				<td>y</td>
+			</tr>
+			<tr>
+				<td>∨</td>
+				<td>o</td>
+			</tr>
+		</table></center></div>
+		<div class="dividir"><h2>Diagrama de Venn</h2>
+		<p class="texto">Es la representación de un conjunto o conjuntos y sus operaciones, que delimitan figuras planas como círculos o rectángulos; por lo general los círculos delimitan a los elementos del conjunto o conjuntos dados y los rectángulos delimitan al conjunto universo. Ejemplo:</p>
+		<ul>
+			<li>Dibuja en un diagrama de Venn los conjuntos</li>
+			
+				<li>U = {2,4,5,6,9,10,11,12,13,16,21,23}</li> 
+				
+				<li>M = {2,5,9,10}</li> 
+				
+				<li>N = {2,4,6,9}</li>  
+				
+				<li>L = {2,4,5,16,21}</li>
+		</ul>
+		<center><img src="https://roa.cedia.edu.ec/webappscode/19/venn.png"></center></div>
+        <div class="dividir"><h2>Operaciones básicas</h2>
+		<h3>Unión</h3>
+		<p class="texto">La unión de dos conjuntos se define como todos los elementos que forman parte de cualquiera de los dos conjuntos.</p>
+		<ul>
+			<li>A ∪ B = {x | x ∈A o x ∈B}</li>
+			<li>Su diagrama de Venn se representa mediante un rectángulo que en su interior posee 2 círculos que se  intersectan y representan a los conjuntos A y B que se encuentran sombreados.</li>
+		</ul>
+		<center><img src="https://roa.cedia.edu.ec/webappscode/19/UNION.jpg"></center>
+		<h3>Intersección</h3>
+		<p class="texto">Una intersección se refiere a los elementos que tienen en común dos conjuntos.</p>
+		<ul>
+			<li>A ∩ B = {x | x ∈A y x ∈B}</li>
+			<li>Su diagrama de Venn se representa mediante un rectángulo que en su interior posee 2 círculos que se  intersectan y representan a los conjuntos A y B. En este caso se encuentra sombreado solamente la intersección o cruce de los 2 conjuntos</li>
+		</ul>
+		<center><img src="https://roa.cedia.edu.ec/webappscode/19/INTERSECCION.jpg"></center>
+		<h3>Complemento</h3>
+		<p class="texto">La solución de un complemento serían aquellos elementos que NO pertenecen a un subjunto de otro conjunto </p>
+		<ul>
+			<li>A´ = {x | x ∈ U y x ∉ A}</li>
+			<li>Su diagrama de Venn se representa mediante un rectángulo que en su interior posee 1 círculo que representa al conjuntos A . Se representa sombreando la región fuera del conjunto A y dentro del Rectángulo.</li>
+		</ul>
+		<center><img src="https://roa.cedia.edu.ec/webappscode/19/COMPLEMENTO.jpg"></center>
+		<h3>Diferencia</h3>
+		<p class="texto">Sean A y B conjuntos no vacíos, se define la diferencia como el conjunto que contiene a los elementos que pertenecen a A y que no pertenecen al conjunto B. La diferencia se representa como A − B.</p>
+		<ul>
+			<li>A − B = A ∩ B c = {x | x ∈ A y x ∉ B}</li>
+			<li>Su diagrama de Venn se representa mediante un rectángulo que en su interior posee 2 círculos que se  intersectan y representan a los conjuntos A y B . Se encuentra sombreado unicamente la zona de A sin considerar la parte de intersección con B.</li>
+		</ul>
+		<center><img src="https://roa.cedia.edu.ec/webappscode/19/DIFERENCIA.png"></center>
+		<h3>Diferencia simétrica</h3>
+		<p class="texto">La diferencia simétrica entre los conjuntos A y B, que se denota como (A ♁ B), es el conjunto que contiene a todos los elementos que se encuentran en el conjunto A pero no están en el conjunto B y también a los elementos del conjunto B que no están en A.</p>
+		<ul>
+			<li>(A♁B)= x|(x ∈ A y x ∉ B) o (x ∈ B y x ∉ A)</li>
+			<li>Su diagrama de Venn se representa mediante un rectángulo que en su interior posee 2 círculos que se  intersectan y representan a los conjuntos A y B . Se encuentra sombreado  A y B, pero no la intersección entre ellos.</li>
+		</ul>
+		<center><img src="https://roa.cedia.edu.ec/webappscode/19/DIF_SIMETRICA.jpg"></center></div>
+        
+    
+    <h1 class="h1" id="tablas">Tablas de verdad</h1>
+	<p class="texto">Las tablas de verdad son un método que nos permite evaluar si una fórmula formada por varias proposiciones es siempre verdad, a veces verdad o nunca es verdad. Cualquier proposición puede tener valor V (verdadero) o F (falso). En la tabla podemos observar todas las combinaciones posibles y los valores en los que resultan.</p>
+	<center><table>
+		<tr>
+			<th>p</th>
+			<th>q</th>
+			<th>~p</th>
+			<th>p→q</th>
+			<th>~p v q</th>
+			<th>(p → q)  ↔ (~ p v q)</th>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>V</td>
+			<td>F</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>F</td>
+			<td>F</td>
+			<td>F</td>
+			<td>F</td>
+			<td>V</td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td>F</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+		</tr>
+	</table></center>
+	<div class="dividir"><h2>Simbología</h2>
+	<p class="texto">La simbología utilizada en las tablas de verdad representa la conjunción de las proposiciones, lo que nos permite obtener el resultado basado en los valores de V (verdadero) y F (falso)</p>
+	<center><table class="tabla2">
+		<tr>
+			<th class="nada"></th>
+			<th class="nada"></th>
+			<th>Conjunción (Y)</th>
+			<th>Disyunción (O)</th>
+			<th>Negación (No)</th>
+			<th>Condicional (Si..entonces)</th>
+			<th>Bicondicional (Si y solo si)</th>
+		</tr>
+		<tr>
+			<th>p</th>
+			<th>q</th>
+			<th>p ^ q</th>
+			<th>p v q</th>
+			<th>~p</th>
+			<th>p → q</th>
+			<th>p ↔ q</th>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+			<td>F</td>
+			<td>V</td>
+			<td>V</td>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>F</td>
+			<td>F</td>
+			<td>V</td>
+			<td>F</td>
+			<td>F</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td>V</td>
+			<td>F</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td>F</td>
+			<td>F</td>
+			<td>F</td>
+			<td>V</td>
+			<td>V</td>
+			<td>V</td>
+		</tr>
+	</table></center>
+<h3>Conjunción</h3>
+<p class="texto">Es utilizado para conectar dos proposiciones, en las cuales se deberán de cumplir ambas condiciones para que el resultado final sea verdadero. Mientras una proposición sea falsa, el enunciado sería falso</p>
+<center><table>
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>p ^ q</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+</table></center>
+<h3>Disyunción</h3>
+<p class="texto"> Al hacer uso de esta clase de operador, el resultado final será verdadero cuando alguna de las proposiciones sea verdadera. Es decir, que solamente puede ser falso si ambos enunciados son falsos, pero si hay alguno que sea verdadero, automáticamente será verdadera. 
+</p>
+<center><table>
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>p v q</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+</table></center>
+<h3>Negación</h3>
+<p class="texto">Como su nombre lo indica, su función principal es negar. Es decir, si una proposición es verdadera, automáticamente será falsa, y viceversa.</p>
+<center>
+	<table>
+		<tr>
+			<th>p</th>
+			<th>~p</th>
+		</tr>
+		<tr>
+			<td>V</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>F</td>
+			<td>V</td>
+		</tr>
+	</table>
+
+</center>
+<h3>Condicional</h3>
+<p class="texto"> Una proposición de tipo condicional es falsa únicamente cuando el antecedente es verdadero y el consecuente falso. Cualquier otra combinación de valores de verdad da como resultado una proposición compuesta verdadera.
+</p>
+<center><table>
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>p → q</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+</table></center>
+<h3>Bicondicional</h3>
+<p class="texto">En una proposición bicondicional, si las proposiciones que la componen son ambas verdaderas o ambas falsas, toda la proposición compuesta será verdadera. En cambio, si las proposiciones que la integran tienen valores de verdad contarios, ya sea verdadero y falso o falso y verdadero, entonces toda la proposición compuesta será falsa.
+</p>
+<center><table>
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>p ↔ q</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+</table></center></div>
+<div class="dividir">
+<h2>Términos útiles</h2>
+<h3>Proposición</h3>
+<p class="texto">Una proposición se refiere a un enunciado que puede ser calificado como verdadero o falso, pero no ambas a la vez. Algunos ejemplos serían:</p>
+<ul>
+	<li>"La tierra gira alrededor del sol"</li>
+	<li>"Los tacos más ricos son los de la alteña"</li>
+	<li>"Un kilómetro es igual a 100 metros"</li>
+	<li>"La receta sale mejor si se le pone el doble de leche"</li>
+</ul>
+<h3>Tautología</h3>
+<p class="texto">una tautología es una fórmula de un sistema que resulta verdadera para cualquier interpretación. En otras palabras, se trata de una expresión lógica que es verdadera para todos los posibles valores de verdad. Un ejemplo representado en una tabla de verdad:</p>
+<center><table class="tabla2">
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>~p</th>
+		<th>~q</th>
+		<th>p v q</th>
+		<th>~(p v q)</th>
+		<th>~p ^ ~q</th>
+		<th>~(p v q) ↔ (~p ^ ~q)</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+</table></center>
+<h3>Contradicción</h3>
+<p class="texto">Al contrario de una tautología, una contradicción es una incopatibilidad entre dos o mas proposiciones, por lo que todos los resultados van a ser falsos. Un ejemplo sería:</p>
+<center><table>
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>(p v q)</th>
+		<th>~(p v q)</th>
+		<th>(p v q) ↔ ~(p v q)</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+	</tr>
+</table></center>
+<h3>Contingencia</h3>
+<p class="texto">Si una proposición no es ni verdadera ni falsa independientemente de los valores de verdad de las proposiciones simples que la componen, esta se denomina contingencia. Una fórmula es contingente si al menos uno de sus casos posibles resulta verdadero y falso por lo menos en otro. Ejemplo:</p>
+<center><table>
+	<tr>
+		<th>p</th>
+		<th>q</th>
+		<th>p ↔ q</th>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>V</td>
+		<td>V</td>
+	</tr>
+	<tr>
+		<td>V</td>
+		<td>F</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>V</td>
+		<td>F</td>
+	</tr>
+	<tr>
+		<td>F</td>
+		<td>F</td>
+		<td>V</td>
+	</tr>
+</table></center>
+</div>
+</body>
+</html>
